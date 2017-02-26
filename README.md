@@ -1,7 +1,7 @@
 # Facebook Engagement
 Obtain the shares and likes of the Facebook page that you want and discover the engagement of all post by hour.
 ## Installation
-Put on "src\main\java\com\server\dao" the accessToken of your Facebook Api.
+Put on "src\main\java\com\server\dao\ServerDAO" the accessToken of your Facebook Api.
 ```java
 //AccessToken for make the request to Facebook.
 String accessToken = "";
