@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.myapp.MyApp.Tests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in com.myapp.MyApp.Tests
+initializationError(com.myapp.MyApp.Tests)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
+Caused by: java.lang.ClassNotFoundException: org.hamcrest.SelfDescribing
+

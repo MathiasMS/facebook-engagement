@@ -1,0 +1,6 @@
+
+/client/node_modules/
+/server/target/server-0.0.1.jar
+/server/target/server-0.0.1-jar-with-dependencies.jar
+/server/src/main/resources/public/js/
+/server/logs/

@@ -1,0 +1,17 @@
+fbapi:
+  build: .
+  command: java -jar /app/karma/server/target/server-0.0.1-jar-with-dependencies.jar
+  ports:
+    - "8081:8081"
+  links:
+    - karma:karma
+
+karma:
+  image: mysql:5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: karma
+    MYSQL_DATABASE: karma
+    MYSQL_USER: karma
+    MYSQL_PASSWORD: karma
+  volumes:
+    - ./:/app/

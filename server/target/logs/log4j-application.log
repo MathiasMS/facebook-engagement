@@ -1,0 +1,296 @@
+2017-02-24 00:47:18 INFO  Version:45 - HHH000412: Hibernate Core {[WORKING]}
+2017-02-24 00:47:18 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-02-24 00:47:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-24 00:47:19 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-02-24 00:47:19 INFO  pooling:126 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/karma]
+2017-02-24 00:47:19 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=****}
+2017-02-24 00:47:19 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2017-02-24 00:47:19 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-24 00:47:19 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-24 00:47:19 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@575ee56a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-02-24 00:47:20 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@438c8a3b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-02-24 00:47:20 INFO  SchemaCreatorImpl:488 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7f8ce89a'
+2017-02-24 00:47:20 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:47:20 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:47:20 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-24 00:47:20 INFO  ServerService:30 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:47:20 INFO  ServerDAO:93 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:47:20 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:47:21 ERROR Server:62 - No existe ese codigo para hacer una request
+com.server.exceptions.FbDataRequestException: No existe ese codigo para hacer una request
+	at com.server.service.ServerService.insertFbData(ServerService.java:40)
+	at com.server.server.Server.lambda$main$0(Server.java:59)
+	at spark.RouteImpl$1.handle(RouteImpl.java:61)
+	at spark.http.matching.Routes.execute(Routes.java:61)
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:130)
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119)
+	at org.eclipse.jetty.server.Server.handle(Server.java:517)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+2017-02-24 00:54:20 INFO  Version:45 - HHH000412: Hibernate Core {[WORKING]}
+2017-02-24 00:54:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-02-24 00:54:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-24 00:54:21 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-02-24 00:54:21 INFO  pooling:126 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/karma]
+2017-02-24 00:54:21 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=****}
+2017-02-24 00:54:21 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2017-02-24 00:54:21 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-24 00:54:21 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-24 00:54:21 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@36b99a3c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-02-24 00:54:22 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@11a77632] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-02-24 00:54:22 INFO  SchemaCreatorImpl:488 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@37c1d06c'
+2017-02-24 00:54:22 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:54:22 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:54:22 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-24 00:54:22 INFO  ServerService:30 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:54:22 INFO  ServerDAO:93 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:54:22 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:23 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:23 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:24 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:24 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:25 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:25 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:25 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:25 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:26 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:26 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:26 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:26 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:27 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:27 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:28 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:28 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:28 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:28 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:30 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:30 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:31 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:31 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:31 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:31 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:32 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:32 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:33 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:33 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:33 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:33 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:34 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:34 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:34 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:34 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:35 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:35 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:37 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:37 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:37 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:37 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:38 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:38 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:39 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:39 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:39 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:39 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:40 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:40 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:41 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:41 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:41 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:41 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:42 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:42 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:43 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:43 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:44 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:44 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:45 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:45 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:46 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:46 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:47 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:47 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:48 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:48 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:49 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:49 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:49 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:49 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:50 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:50 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:51 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:51 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:51 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:51 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:52 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:52 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:52 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:53 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:53 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:53 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:54 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:54 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:55 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:55 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:56 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:56 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:57 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:57 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:58 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:58 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:58 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:58 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:54:59 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:54:59 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:00 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:00 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:01 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:01 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:02 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:02 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:02 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:02 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:03 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:03 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:04 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:04 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:05 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:05 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:06 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:06 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:07 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:07 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:08 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:08 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:09 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:09 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:10 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:10 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:10 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:10 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:11 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:11 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:12 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:12 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:12 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:12 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:13 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:13 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:13 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:13 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:14 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:14 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:14 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:14 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:14 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:25 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:25 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:25 INFO  ServerService:30 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:55:25 INFO  ServerDAO:93 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:55:25 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:25 ERROR Server:62 - No existe ese codigo para hacer una request
+com.server.exceptions.FbDataRequestException: No existe ese codigo para hacer una request
+	at com.server.service.ServerService.insertFbData(ServerService.java:40)
+	at com.server.server.Server.lambda$main$0(Server.java:59)
+	at spark.RouteImpl$1.handle(RouteImpl.java:61)
+	at spark.http.matching.Routes.execute(Routes.java:61)
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:130)
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119)
+	at org.eclipse.jetty.server.Server.handle(Server.java:517)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+2017-02-24 00:55:43 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:43 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:44 INFO  ServerService:30 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:55:44 INFO  ServerDAO:93 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:55:44 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:44 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:44 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:55:44 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:55:44 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:55:44 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:23 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:23 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:23 INFO  ServerService:30 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:57:23 INFO  ServerDAO:93 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:57:23 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:24 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:24 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:24 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:24 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:25 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:25 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:26 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:26 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:26 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:26 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:27 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:27 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:27 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:27 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:28 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:28 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:28 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:28 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:29 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:29 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:29 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:29 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:30 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:30 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:31 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:31 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:31 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:31 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:32 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:32 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:32 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:32 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:33 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:33 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:33 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:33 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:34 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:34 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:34 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:34 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:35 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:35 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:35 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:35 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:36 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:36 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:36 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:36 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:36 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:46 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:46 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:46 INFO  ServerService:30 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:57:46 INFO  ServerDAO:93 - Ingresa metodo insertFbData(), para grabar los datos en la DB
+2017-02-24 00:57:46 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:46 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:46 INFO  ServerDAO:216 - Ingresa metodo facebookRequest(), para hacer la consulta con Facebook
+2017-02-24 00:57:46 INFO  ServerDAO:144 - Ingresa metodo mapDataToInsert(), para mapear los datos obtenidos de la consulta con Facebook
+2017-02-24 00:57:47 INFO  ServerService:20 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos
+2017-02-24 00:57:47 INFO  ServerDAO:37 - Ingresa metodo getDataDB(), para acceder a la DB y obtener los datos

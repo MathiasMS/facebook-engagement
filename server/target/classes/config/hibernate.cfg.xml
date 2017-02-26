@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://karma:3306/karma</property>
+		<property name="hibernate.connection.username">karma</property>
+		<property name="hibernate.connection.password">karma</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">create-drop</property>
+		<mapping resource="com/hibernate/FbData.hbm.xml"></mapping>
+	</session-factory>
+</hibernate-configuration>
+

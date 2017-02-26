@@ -1,0 +1,34 @@
+body {
+	font-family: Raleway, sans-serif;
+}
+
+.container {
+	margin: auto;
+	width: 80%;
+	text-align: center;
+}
+
+.input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 300px;
+	border: none;
+	border-bottom: 1px solid #757575;
+	margin: auto;
+}
+
+.button {
+	border: none;
+	color: white;
+	overflow: hidden;
+	margin: 1rem;
+	padding: 0;
+	text-transform: uppercase;
+	width: 150px;
+	height: 40px;
+	background-color: #5A5050;
+	font-weight: 600;
+	font-size: 20px;
+	cursor: pointer;
+}

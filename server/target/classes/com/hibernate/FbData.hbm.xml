@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernate.FbData" table="dataresponse" catalog="karma">
+		<id name="idData" type="java.lang.Integer">
+			<column name="idData" />
+			<generator class="identity" />
+		</id>
+		<property name="likes" type="java.lang.Long">
+			<column name="likes" not-null="false" unique="false" />
+		</property>
+		<property name="shares" type="java.lang.Long">
+			<column name="shares" not-null="false" unique="false" />
+		</property>
+		<property name="time" type="string">
+			<column name="time" not-null="false" unique="false" />
+		</property>
+		<property name="idPage" type="string">
+			<column name="idPage" not-null="false" unique="false" />
+		</property>
+		<property name="date" type="java.util.Date">
+			<column name="date" not-null="false" unique="false" />
+		</property>
+
+	</class>
+</hibernate-mapping>

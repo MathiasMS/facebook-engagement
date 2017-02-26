@@ -1,0 +1,44 @@
+{
+  "name": "karma",
+  "version": "1.0.0",
+  "description": "Check Facebook post engagement by time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --port 9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicmesan/karma.git"
+  },
+  "author": "Nicolas Medina Sanchez <nicoms91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicmesan/karma/issues"
+  },
+  "homepage": "https://github.com/nicmesan/karma#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "chart.js": "^2.5.0",
+    "d3": "^4.5.0",
+    "react": "^15.4.2",
+    "react-chartjs-2": "^2.0.0",
+    "react-dom": "^15.4.2",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3",
+    "redux-promise-middleware": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
